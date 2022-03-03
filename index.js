@@ -98,7 +98,7 @@ let productDiv = document.getElementsByClassName("product");
 for (let i = 0; i < del.length; i++) {
   del[i].addEventListener("click", () => {
     productDiv[i].classList.add("none");
-    subtotalCost.innerHTML = subtotalCost.innerHTML - albumPrice[i].innerHTML;
+    subtotalCost.innerHTML = subtotalCost.innerHTML - albumTotal[i].innerHTML;
     cartTopTotal.innerHTML = summaryQuantity.innerHTML =
       cartTopTotal.innerHTML - quantity[i].innerHTML;
     finalPrice.innerHTML = +subtotalCost.innerHTML + +shippingPrice.innerHTML;

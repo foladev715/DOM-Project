@@ -156,7 +156,8 @@ h5:hover {
   justify-content: space-between;
   width: 92%;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 0;
+  margin-bottom: 8px;
 }
 
 .product:hover {
@@ -232,6 +233,7 @@ h5:hover {
 #celine_album {
   margin-bottom: 20px;
 }
+
 #content {
   display: grid;
   height: 100vh;
@@ -242,7 +244,7 @@ h5:hover {
 }
 
 #header {
-  padding-top: 20px;
+  padding-top: 25px;
   border-bottom: 2px double #cdd0cb;
   position: fixed;
   top: 0;
