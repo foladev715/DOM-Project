@@ -116,9 +116,3 @@ for (let i = 0; i < del.length; i++) {
 // }
 // decreaseQuantity.setAttribute("disabled", "disabled");
 // var valueCount;
-
-// increaseQuantity.addEventListener("click", function () {
-//   valueCount = quantity.value;
-//   valueCount++;
-//   quantity.value = valueCount;
-//
