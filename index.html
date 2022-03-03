@@ -35,40 +35,31 @@
       <div id="cart">
         <div id="cart_top">
           <h2>Shopping Cart</h2>
-          <h3>3 Items</h3>
+          <h3><span id="cart_top_total">3</span> Items</h3>
         </div>
         <div id="cart_headings">
           <p>PRODUCT DETAILS</p>
           <p id="quantity">QUANTITY</p>
-          <p>PRICE</p>
-          <p>TOTAL</p>
+          <p>PRICE (₦)</p>
+          <p>TOTAL (₦)</p>
         </div>
-
         <div class="product" id="mariah_album">
           <div class="album_image">
             <img class="album_images" src="images/mariah.png" alt="" />
           </div>
           <div class="album_details">
             <p class="artist_name">Mariah Carey</p>
-
             <p class="album_name">Music Box</p>
             <p class="remove">Remove</p>
           </div>
           <i class="fa-solid fa-heart heart" id="album_1_like"></i>
           <div class="quantity_adjuster">
             <button class="btn btn-secondary btn-sm decrease">-</button>
-            <input
-              class="adjusted_quantity"
-              id="album_1_quantity"
-              type="text"
-              value="1"
-              readonly
-              aria-label="1"
-            />
+            <span class="adjusted_quantity" id="album_1_quantity">1</span>
             <button class="btn btn-secondary btn-sm increase">+</button>
           </div>
-          <div class="price">₦5,000</div>
-          <div class="total">₦5,000</div>
+          <span class="price">5000</span>
+          <span class="total" id="album_1_total">5000</span>
         </div>
         <div class="product" id="whitney_album">
           <div class="album_image">
@@ -82,18 +73,11 @@
           <i class="fa-solid fa-heart heart" id="album_2_like"></i>
           <div class="quantity_adjuster">
             <button class="btn btn-secondary btn-sm decrease">-</button>
-            <input
-              class="adjusted_quantity"
-              id="album_1_quantity"
-              type="text"
-              value="1"
-              readonly
-              aria-label="1"
-            />
+            <span class="adjusted_quantity" id="album_2_quantity">1</span>
             <button class="btn btn-secondary btn-sm increase">+</button>
           </div>
-          <div class="price">₦5,000</div>
-          <div class="total">₦5,000</div>
+          <span class="price">5000</span>
+          <span class="total" id="album_2_total">5000</span>
         </div>
         <div class="product" id="celine_album">
           <div class="album_image">
@@ -107,18 +91,11 @@
           <i class="fa-solid fa-heart heart" id="album_3_like"></i>
           <div class="quantity_adjuster">
             <button class="btn btn-secondary btn-sm decrease">-</button>
-            <input
-              class="adjusted_quantity"
-              id="album_1_quantity"
-              type="text"
-              value="1"
-              readonly
-              aria-label="1"
-            />
+            <span class="adjusted_quantity" id="album_3_quantity">1</span>
             <button class="btn btn-secondary btn-sm increase">+</button>
           </div>
-          <div class="price">₦5,000</div>
-          <div class="total">₦5,000</div>
+          <span class="price">5000</span>
+          <span class="total" id="album_3_total">5000</span>
         </div>
         <div>
           <h5>← Continue Shopping</h5>
@@ -128,18 +105,28 @@
         <div id="summary"><h4>Order Summary</h4></div>
         <div id="total">
           <p>ITEMS:</p>
-          <p id="no_of_items">3</p>
-          <p>₦15,000</p>
+          <span id="no_of_items">3</span>
+          <span id="subtotal_cost">15000</span>
         </div>
         <div id="shipping">
+          <p id="shipping_cost">SHIPPING COST</p>
+          <span id="shipping_price">500</span>
+        </div>
+        <!-- <div id="shipping">
           <div class="form-group">
             <label for="exampleFormControlSelect1">SHIPPING</label>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option>Standard Delivery - ₦500</option>
-              <option>Express Delivery - ₦1,000</option>
+              <option>
+                Standard Delivery - ₦<span id="delivery_price">500</span>
+              </option>
+              <option>
+                Express Delivery - ₦<span id="delivery_price_2"
+                  >1000 (currently unavailable)</span
+                >
+              </option>
             </select>
           </div>
-        </div>
+        </div> -->
         <div id="promo">
           <form>
             <div class="form-group">
@@ -156,9 +143,10 @@
           <button type="button" class="btn btn-primary">APPLY</button>
         </div>
         <div id="total-final">
-          <p>TOTAL COST</p>
-          <p>₦15,500</p>
+          <p id="total_cost">TOTAL COST</p>
+          ₦<span id="final_price">15500</span>
         </div>
+
         <div id="checkout">
           <button type="button" class="btn btn-warning">CHECKOUT</button>
         </div>
