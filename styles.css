@@ -1,4 +1,4 @@
-/********************************************Tag Selectors*****************************************/
+/**************************************************************Tag Selectors**********************************************************************/
 body {
   background-color: #fff;
   margin: 20px 50px 130px 130px;
@@ -49,18 +49,20 @@ h5 {
   display: inline;
   padding: 10px 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 h5:hover {
   background-color: #ffd369;
 }
 
-/*******************************************Class Selectors****************************************/
+/***************************************************************Class Selectors*******************************************************************/
 
 .adjusted_quantity {
   border: none;
-  width: 20px;
-  padding-left: 6px;
+  width: 30px;
+  /* padding-left: 10px; */
+  text-align: center;
   /* display: inline;
   padding: 15px 5px 0 5px; */
 }
@@ -99,11 +101,6 @@ h5:hover {
   color: #423f3e;
 }
 
-.fa-heart {
-  position: absolute;
-  left: 230px;
-}
-
 .btn-sm {
   background-color: #efefef;
   color: #000;
@@ -117,22 +114,26 @@ h5:hover {
   border-color: #ef6d6d;
 }
 
+.btn-primary:hover {
+  background-color: #ff7272;
+  border-color: #ff7272;
+}
+
 .btn-warning {
   background-color: #ffd369;
   border-color: #ffd369;
   width: 100%;
 }
 
-/* .decrement {
-  width: 20px;
-  height: 20px;
-  text-align: center;
+.fa-heart {
+  position: absolute;
+  left: 230px;
+  cursor: pointer;
+  color: grey;
 }
 
-.increment {
-  width: 20px;
-  height: 20px;
-  text-align: center;
+/* .fa-heart:hover {
+  color: #000;
 } */
 
 .like {
@@ -155,7 +156,8 @@ h5:hover {
   justify-content: space-between;
   width: 92%;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 0;
+  margin-bottom: 8px;
 }
 
 .product:hover {
@@ -175,6 +177,11 @@ h5:hover {
   font-size: 12px;
   line-height: 16px;
   color: #9e9ea7;
+  cursor: pointer;
+}
+
+.remove:hover {
+  color: #000;
 }
 
 .total {
@@ -187,7 +194,7 @@ h5:hover {
   left: 605px;
 }
 
-/*******************************************id Selectors****************************************/
+/*****************************************************************id Selectors********************************************************************/
 
 #cart {
   grid-column: 1 / span 8;
@@ -211,7 +218,7 @@ h5:hover {
   padding-top: 25px;
   padding-bottom: 0;
   text-decoration: underline;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 #cart_top {
@@ -226,6 +233,7 @@ h5:hover {
 #celine_album {
   margin-bottom: 20px;
 }
+
 #content {
   display: grid;
   height: 100vh;
@@ -236,7 +244,7 @@ h5:hover {
 }
 
 #header {
-  padding-top: 20px;
+  padding-top: 25px;
   border-bottom: 2px double #cdd0cb;
   position: fixed;
   top: 0;
@@ -251,20 +259,22 @@ h5:hover {
 }
 
 #no_of_items {
-  padding-right: 160px;
+  padding-right: 180px;
   padding-bottom: 20px;
-}
-
-#quantity {
-  padding-left: 50px;
 }
 
 #promo {
   padding: 15px 0 30px 0;
 }
 
+#quantity {
+  padding-left: 70px;
+}
+
 #shipping {
   padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #subtotal {
@@ -289,9 +299,19 @@ h5:hover {
   height: 60px;
 }
 
+#total_cost {
+  padding-right: 155px;
+}
+
 #total-final {
   border-top: 1.5px solid #d6d6d6;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+}
+
+/********************************************************************remove***********************************************************************/
+
+.none {
+  display: none;
 }
